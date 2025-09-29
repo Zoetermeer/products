@@ -1,0 +1,12 @@
+# Build and IDE outputs for backend module
+target/
+logs/
+.idea/
+.vscode/
+out/
+.settings/
+
+# Keep Maven wrapper tracked
+!mvnw
+!mvnw.cmd
+

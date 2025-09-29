@@ -102,9 +102,6 @@ export default function App() {
             {products.map(p => (
               <li key={p.id}>
                 <span>{p.name}</span>
-                <span>
-                  {p.id}
-                </span>
               </li>
             ))}
           </ul>

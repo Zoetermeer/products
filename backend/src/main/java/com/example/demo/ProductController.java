@@ -1,9 +1,6 @@
 package com.example.demo;
 
-import org.apache.catalina.Store;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -22,7 +19,6 @@ public class ProductController {
 
     @PostMapping
     public Product createProduct(@RequestBody CreateProductRequest request) {
-        var created = productStore.save(new Product(request.name()));
-        return created;
+        return productStore.save(new Product(request.name()));
     }
 }
